@@ -1,0 +1,30 @@
+[package]
+# Semantic Versionning is used: https://semver.org/
+version = "0.1.0"
+
+# The title and description fields are primarily for displaying extension info in UI
+title = "Simple Camera Speed Selector"
+description="10 presets for camera speed. Use right click + WASD to fly around"
+icon = "data/icon.png"
+preview_image = "data/preview.png"
+
+# Path (relative to the root) or content of readme markdown file for UI.
+readme  = "docs/README.md"
+
+# URL of the extension source repository.
+repository = ""
+
+# One of categories for UI.
+category = "UI, Camera"
+
+# Keywords for the extension
+keywords = ["Camera", "Speed", "Scene Navigation"]
+
+
+# Use omni.ui to build simple UI
+[dependencies]
+"omni.kit.uiapp" = {}
+
+# Main python module this extension provides, it will be publicly available as "import Funkyboy.cameraspeed".
+[[python.module]]
+name = "Funkyboy.cameraspeed"
