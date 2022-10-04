@@ -121,6 +121,9 @@ class SimpleCamWindow(ui.Window):
                     radbt7 = ui.RadioButton(text ="8", name="eight", radio_collection=collection, clicked_fn=lambda: on_click8())
                     radbt8 = ui.RadioButton(text ="9", name="nine", radio_collection=collection, clicked_fn=lambda: on_click9())
                     radbt9 = ui.RadioButton(text ="10", name="ten", radio_collection=collection, clicked_fn=lambda: on_click10())
-    
+
+#Docking
+        super().dock_in_window("Environments", ui.DockPosition.SAME) 
+
     def _on_visibility_changed(self, visible):
         omni.kit.ui.get_editor_menu().set_value(self._menu_path, visible)
